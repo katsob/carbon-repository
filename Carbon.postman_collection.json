@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "3f4ffb06-8771-4756-a738-a050e6ae769b",
+		"name": "Carbon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25421027"
+	},
+	"item": [
+		{
+			"name": "Regional intensity",
+			"item": [
+				{
+					"name": "England",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Carbon}}/regional/england",
+							"host": [
+								"{{Carbon}}"
+							],
+							"path": [
+								"regional",
+								"england"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Wales",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Carbon}}/regional/wales",
+							"host": [
+								"{{Carbon}}"
+							],
+							"path": [
+								"regional",
+								"wales"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Scotland",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Carbon}}/regional/scotland",
+							"host": [
+								"{{Carbon}}"
+							],
+							"path": [
+								"regional",
+								"scotland"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Regional intensity",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{Carbon}}/regional",
+							"host": [
+								"{{Carbon}}"
+							],
+							"path": [
+								"regional"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Regional intensity - sorting",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{Carbon}}/regional?data=true&intensity=true",
+							"host": [
+								"{{Carbon}}"
+							],
+							"path": [
+								"regional"
+							],
+							"query": [
+								{
+									"key": "data",
+									"value": "true"
+								},
+								{
+									"key": "intensity",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "National intensity",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Carbon}}/intensity/date",
+					"host": [
+						"{{Carbon}}"
+					],
+					"path": [
+						"intensity",
+						"date"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Carbon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Carbon}}",
+					"host": [
+						"{{Carbon}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Carbon",
+			"value": "api.carbonintensity.org.uk"
+		}
+	]
+}
